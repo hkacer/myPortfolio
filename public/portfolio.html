@@ -7,19 +7,22 @@
 
   <title>Portfolio</title>
   <link rel="stylesheet" href="portfolio.css">
+  <script src="https://kit.fontawesome.com/e7f183e8cc.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id="header">
     <div class="container">
       <nav>
         <img src="images/mylogo.PNG" class="logo" style=width:200px>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Projects</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas solid fa-circle-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fas solid fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
         <p>Software Developer</p>
@@ -31,22 +34,23 @@
   <div class="container">
     <div class="row">
       <div class="about-col-1">
-        <img src="images/user.jpg" style= width:300px alt="user pic">
+        <img src="images/pic.jpg" style= width:500px alt="user pic">
       </div>
       <div class="about-col-2">
         <h1 class="sub-title">About Me</h1>
-        <p>Hi, my name is Hatice Kaymaz and I am a highly motivated and enthusiastic software developer. I am always seeking out new challenges and am eager to learn and grow as a professional. I have strong communication skills and am able to work effectively in both team and solo environments. I am confident in my abilities and have high self-esteem, which allows me to approach each new project with a positive attitude.
+        <p>Hi, my name is Hatice Kacer and I am a highly motivated and enthusiastic software developer. I am always seeking out new challenges and am eager to learn and grow as a professional. I have strong communication skills and am able to work effectively in both team and solo environments. I am confident in my abilities and have high self-esteem, which allows me to approach each new project with a positive attitude.
 
-          In my past experiences, I have gained a diverse set of skills in a variety of programming languages and technologies. I am always looking for opportunities to expand my knowledge and am committed to staying up to date with the latest developments in my field.
+         <p>In my past experiences, I have gained a diverse set of skills in a variety of programming languages and technologies. I am always looking for opportunities to expand my knowledge and am committed to staying up to date with the latest developments in my field.
+        </p> 
+          <p>In my free time, I enjoy watching Korean-Dramas,  and am always looking for new ways to stay active and engaged.</p> 
           
-          In my free time, I enjoy watching Korean-Dramas,  and am always looking for new ways to stay active and engaged.
-          
-          I am excited to share my portfolio with you and hope that it will give you a sense of my skills and capabilities as a software developer. Please don't hesitate to reach out to me if you have any questions or would like to discuss potential opportunities.</p>
+         <p> I am excited to share my portfolio with you and hope that it will give you a sense of my skills and capabilities as a software developer. Please don't hesitate to reach out to me if you have any questions or would like to discuss potential opportunities.</p>
+        </p>
 
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skils')">Skils</p>
-            <p class="tab-links" onclick="opentab('experiences')">Experiences</p>
-            <p class="tab-links" onclick="opentab('Education')">Education</p>
+            <p class="tab-links active-link" onclick="opentab('skills')">Skils</p>
+            <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
           <div class="tab-contents active-tab" id="skills">
             <ul>
@@ -55,7 +59,7 @@
               <li><span>Middle and High</span><br>School Teacher</li>
             </ul>
           </div>
-          <div class="tab-contents" id="Experiences">
+          <div class="tab-contents" id="experience">
             <ul>
               <li><span>2022-current</span><br>DevMountain-HackBright Developer Bootcamp</li>
               <li><span>2019-2022</span><br>Middle School Science and PLTW Teacher</li>
@@ -73,70 +77,130 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- <main>
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-item">
-          <img src="project1.jpg" alt="Project 1">
-          <h3>Project 1</h3>
-          <p>Add a short description of your project here.</p>
-        </div>
-        <div class="project-item">
-          <img src="project2.jpg" alt="Project 2">
-          <h3>Project 2</h3>
-          <p>Add a short description of your project here.</p>
-        </div>
-        <div class="project-item">
-          <img src="project3.jpg" alt="Project 3">
-          <h3>Project 3</h3>
-          <p>Add a short description of your project here.</p>
+<!-- ------------services------- -->
+<div id="services">
+  <div class="container">
+    <h1 class=sub-title>My Services</h1>
+    <div class="service-list">
+      <div>
+        <i class="fas fa-code"></i>
+          <h2>Web Developer</h2>
+          <p>Description......</p>
+          <a href="#">Learn More</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-school"></i>
+        <h2>Middle School Science and PLTW Teacher</h2>
+        <p>Description......</p>
+        <a href="#">Learn More</a>
+    </div>
+    <div>
+      <i class="fa-solid fa-dna"></i>
+      <h2>High School Biology and PLTW Teacher</h2>
+      <p>Description......</p>
+      <a href="#">Learn More</a>
+  </div>
+    </div>
+  </div>
+</div>
+<!-- -------portfolio----------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/projectpic.PNG" alt="Rating past Presidents">
+        <div class="layer">
+          <h3>"Rate the Presidents" Website</h3>
+          <p>This wbesite allows users to rate past presidents on a scale of 1 to 5 based on their overall performance and to leave comments explaining their ratings.</p>
+          <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
       </div>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>You can contact me via email at <a href="mailto:your@email.com">your@email.com</a> or by filling out the form below:</p>
-      <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message"></textarea><br>
-        <input type="submit" value="Submit">
-      </form> 
-    </section>
-  </main>
-  <footer>
-    <p>Copyright 2021</p>
-  </footer> -->
-  <!-- <script src="index.js"></script> -->
+      <div class="work">
+        <img src="images/logo2.PNG" alt="Rating past Presidents">
+        <div class="layer">
+          <h3>Under the Construction</h3>
+          <p>Will come soon...</p>
+          <a href="#" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See More</a>
+  </div>
+</div>
+<!-- ------- Contact----- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> haticemim17@gmail.com</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/hatice-kacer-m-s-ed-394530b2/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/hkacer"><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <a href="images/Hatice-Kaymaz-Resume.pdf" class="btn btn2">Download Resume</a>
+
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright  <i class="fa-solid fa-copyright"></i>  Hatice. Made with  <i class="fa-solid fa-heart"></i>  by Hatice Kacer </p>
+  </div>
+</div>
+
+
+<script>
+  var tablinks=document.getElementsByClassName("tab-links")
+  var tabcontents=document.getElementsByClassName("tab-contents")
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+<script>
+  var sidemenu=document.getElementById('sidemenu')
+
+  function openmenu(){
+    sidemenu.style.right="0"
+  }
+  function closemenu(){
+    sidemenu.style.right="-200px"
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxpLXEFeyPvUOkgCo-i7zv6o37h9FDTHQnPSKkl1164JfL2hs8W1CD_XD6gckSuV1VG/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 </html>
